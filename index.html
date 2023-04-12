@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <title>Tic Tac Toe</title>
 </head>
 
@@ -16,22 +19,34 @@
             </nav>
         </header>
         <div class="gameboard">
-            <h1></h1>
+            <h1 id="winner"></h1>
             <div class="grid">
-                <input type="button" value="1">
-                <input type="button" value="2">
-                <input type="button" value="3">
-                <input type="button" value="4">
-                <input type="button" value="5">
-                <input type="button" value="6">
-                <input type="button" value="7">
-                <input type="button" value="8">
-                <input type="button" value="9">
+                <input id="button-1" type="button" value="1">
+                <input id="button-2" type="button" value="2">
+                <input id="button-3" type="button" value="3">
+                <input id="button-4" type="button" value="4">
+                <input id="button-5" type="button" value="5">
+                <input id="button-6" type="button" value="6">
+                <input id="button-7" type="button" value="7">
+                <input id="button-8" type="button" value="8">
+                <input id="button-9" type="button" value="9">
+            </div>
+            <div class="labels">
+                <div class="xlabels">
+                    <p>X</p>
+                    <hr>
+                    <p id="x-wins"></p>
+                </div>
+                <div class="olabels">
+                    <p>O</p>
+                    <hr>
+                    <p id="0-wins"></p>
+                </div>
             </div>
         </div>
     </div>
 
-
+    <script src="index.js" type="text/javascript"></script>
 </body>
 
 </html>
